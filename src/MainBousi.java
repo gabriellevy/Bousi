@@ -120,6 +120,7 @@ public class MainBousi {
                 kaamelottCheckBox.setSelected(true);
                 rickMortyCheckBox.setSelected(true);
                 southparkCheckBox.setSelected(true);
+                inconnusCheckbox.setSelected(true);
                 dariaCheckBox.setSelected(true);
                 futuramaCheckBox.setSelected(true);
                 simpsonsCheckBox.setSelected(true);
@@ -127,6 +128,27 @@ public class MainBousi {
                 cowboyBebopCheckBox.setSelected(false);
                 herculePoirotCheckBox.setSelected(false);
                 profitCheckBox.setSelected(false);
+            }
+        });
+        tresCourtButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // ne garde que les trucs très courts (moins de 10 minutes)
+                brefCheckBox.setSelected(true);
+                friendsCheckBox.setSelected(false);
+                griffinCheckBox.setSelected(false);
+                kaamelottCheckBox.setSelected(true);
+                rickMortyCheckBox.setSelected(false);
+                southparkCheckBox.setSelected(false);
+                inconnusCheckbox.setSelected(true);
+                dariaCheckBox.setSelected(false);
+                futuramaCheckBox.setSelected(false);
+                simpsonsCheckBox.setSelected(false);
+                americanDadCheckBox.setSelected(false);
+                cowboyBebopCheckBox.setSelected(false);
+                herculePoirotCheckBox.setSelected(false);
+                profitCheckBox.setSelected(false);
+
             }
         });
     }
@@ -154,12 +176,13 @@ public class MainBousi {
     private JCheckBox herculePoirotCheckBox;
     private JCheckBox profitCheckBox;
     private JCheckBox simpsonsCheckBox;
-    private JCheckBox checkBox14;
+    private JCheckBox inconnusCheckbox;
     private JButton toutDécocherButton;
     private JButton humourFrButton;
+    private JButton tresCourtButton;
 
     List<JCheckBox> boites = Arrays.asList(brefCheckBox, americanDadCheckBox, cowboyBebopCheckBox, friendsCheckBox, griffinCheckBox, kaamelottCheckBox,
-            rickMortyCheckBox, southparkCheckBox, dariaCheckBox, futuramaCheckBox, herculePoirotCheckBox, profitCheckBox, simpsonsCheckBox);
+            rickMortyCheckBox, southparkCheckBox, dariaCheckBox, futuramaCheckBox, herculePoirotCheckBox, profitCheckBox, simpsonsCheckBox, inconnusCheckbox);
 
     private ArrayList<String> dossierDesSeriesSelectionnees() {
 
