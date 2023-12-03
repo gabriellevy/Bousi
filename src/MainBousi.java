@@ -56,8 +56,8 @@ public class MainBousi {
                 try
                 {
                     // lister toutes les séries sélectionnées
-                    //String racine = "E:\\Series\\"; // racine quand en train de bosser, pas pour la version de production/déploiement
-                    String racine = "..\\"; // quand en déploiement Bousi est placé dans le même dossier que els séries
+                    String racine = "E:\\Series\\"; // racine quand en train de bosser, pas pour la version de production/déploiement
+                    //String racine = "..\\"; // quand en déploiement Bousi est placé dans le même dossier que els séries
 
                     // choisir une série
                     ArrayList<String> dossiersSeries = dossierDesSeriesSelectionnees();
@@ -87,13 +87,13 @@ public class MainBousi {
 
                     // lancer vidéo via vlc
                     String cheminFinal = "\"" + fichierChoisi.getAbsoluteFile().toString().replace("\\", "\\\\") + "\"";
-                    String commande = "C:\\Program Files (x86)\\VideoLAN\\VLC\\vlc.exe "+ cheminFinal;
+                    String commande = "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe "+ cheminFinal;
 
                     System.out.println("Commande : " + commande);
 
                     // Running the above command
                     Runtime run  = Runtime.getRuntime();
-                    Process proc = run.exec(commande);
+                    /*Process proc = */run.exec(commande);
                 }
 
                 catch (IOException exc)
