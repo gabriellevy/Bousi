@@ -56,8 +56,8 @@ public class MainBousi {
                 try
                 {
                     // lister toutes les séries sélectionnées
-                    String racine = "E:\\Series\\"; // racine quand en train de bosser, pas pour la version de production/déploiement
-                    //String racine = "..\\"; // quand en déploiement Bousi est placé dans le même dossier que els séries
+                    //String racine = "E:\\Series\\"; // racine quand en train de bosser, pas pour la version de production/déploiement
+                    String racine = "..\\"; // quand en déploiement Bousi est placé dans le même dossier que els séries
 
                     // choisir une série
                     ArrayList<String> dossiersSeries = dossierDesSeriesSelectionnees();
